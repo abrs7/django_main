@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-To get started with My Awesome Project, simply follow these steps:
+To get started with My Awesome Django Project, simply follow these steps:
 
 1. Clone this repository.
 2. Install the required dependencies.
