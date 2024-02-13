@@ -20,6 +20,9 @@ To get started with My Awesome Django Project, simply follow these steps:
 
 We welcome contributions from the community! Whether it's bug fixes, feature enhancements, or documentation improvements, every contribution helps us propel further into the unknown depths of space.
 
+## Fun Fact
+Django is the new hype which we can integrate the web development and ML
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
