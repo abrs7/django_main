@@ -33,4 +33,5 @@ def populate(N=5):
 if __name__ == '__main__':
     print("Populating the databases...Please Wait")
     populate(20)
-    print('Populating Complete')
+    
+    Print('Populating the the database completed!!!')
