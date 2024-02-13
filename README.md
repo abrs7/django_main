@@ -22,6 +22,9 @@ We welcome contributions from the community! Whether it's bug fixes, feature enh
 
 ## Fun Fact
 Django is the new hype which we can integrate the web development and ML
+## Fun Facts about Django
+
+There are no js developer who invades django and use it for web devt purpose only
 
 ## License
 
