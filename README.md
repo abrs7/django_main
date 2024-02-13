@@ -23,3 +23,4 @@ We welcome contributions from the community! Whether it's bug fixes, feature enh
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+For Educational purpose only
