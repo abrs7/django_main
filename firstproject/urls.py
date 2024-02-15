@@ -25,6 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('first_app/', include('first_app.urls')),
     path('users', views.users, name = 'users' ),
-    path('first_app/forms', views.form_name_view, name='form_name_view')
+    path('first_app/forms', views.form_name_view, name='form_name_view'),
+    path('first_app/signup', views.signup, name='signup')
     
 ]
