@@ -34,3 +34,7 @@ def form_name_view(request):
 
     form = forms.FormName()
     return render(request, 'forms.html', {'form':form})
+def others(request):
+    return render(request,'firstapp/others')
+def relative_temp(request):
+    return render(request, 'first_app/relative_temp')
