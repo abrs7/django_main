@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from first_app.models import User
 from . import forms
-
+from . import signup_forms
 
 # Create your views here.
 
@@ -35,6 +35,23 @@ def form_name_view(request):
     form = forms.FormName()
     return render(request, 'forms.html', {'form':form})
 def others(request):
-    return render(request,'firstapp/others')
+    contento={'text':'Hello to ur site Everyone!!!', 'number':56}
+    return render(request,'others.html', context=contento)
 def relative_temp(request):
-    return render(request, 'first_app/relative_temp')
+    return render(request, 'relative_temp.html' )
+def signup_form(request):
+    if request.method =='POST':
+        form = forms.FormName(request.POST)
+
+        if form.is_valid():
+            print('Validation Successful!!')
+            print("Name:" + form.cleaned_data['name'])
+            print("Email:" + form.cleaned_data['email'])
+            print("Text:" + form.cleaned_data['text'])
+        else:
+            return render(request, 'signup.html', {'form': form})
+
+    form = forms.FormName()
+    
+    return render(request, 'signup.html',{'form': form})    
+
