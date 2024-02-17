@@ -2,7 +2,11 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from first_app.models import User
 from . import forms
+<<<<<<< HEAD
 from . import signup_forms
+=======
+from first_app.signup_forms import NewUser
+>>>>>>> 0d27c795c3a64587703131ed0e3c318222288932
 
 # Create your views here.
 
@@ -34,6 +38,7 @@ def form_name_view(request):
 
     form = forms.FormName()
     return render(request, 'forms.html', {'form':form})
+<<<<<<< HEAD
 def others(request):
     contento={'text':'Hello to ur site Everyone!!!', 'number':56}
     return render(request,'others.html', context=contento)
@@ -54,4 +59,18 @@ def signup_form(request):
     form = forms.FormName()
     
     return render(request, 'signup.html',{'form': form})    
+=======
+def signup(request):
+    form = NewUser()
+
+    if request.method == 'POST':
+        form = NewUser(request.POST)
+
+        if form.is_valid():
+            form.save(commit=True)
+            return index(request)
+        else:
+            print('ERROR FORM INVALID')
+    return render(request,'signup.html',{'form':form})        
+>>>>>>> 0d27c795c3a64587703131ed0e3c318222288932
 

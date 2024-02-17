@@ -20,7 +20,6 @@ To get started with My Awesome Django Project, simply follow these steps:
 
 We welcome contributions from the community! Whether it's bug fixes, feature enhancements, or documentation improvements, every contribution helps us propel further into the unknown depths of space.
 
-## Fun Facts about Django
 
 There are no js developer who invades django and use it for web devt purpose only
 
