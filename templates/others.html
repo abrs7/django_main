@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends "forms.html" %}
+
+{% block body_block%}
+    <h3>Others format</h3>
+    <p>This is what template inheritance means!!</p>
+
+    <h5>{{text | upper  }} with number of {{number | add:30}}</h5>
+
+    {%endblock%}
